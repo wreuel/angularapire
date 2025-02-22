@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<SpaRoot>..\myapi.client</SpaRoot>
-		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
+		<SpaProxyLaunchCommand>npm run spa</SpaProxyLaunchCommand>
 		<SpaProxyServerUrl>https://localhost:7056</SpaProxyServerUrl>
 	</PropertyGroup>
 

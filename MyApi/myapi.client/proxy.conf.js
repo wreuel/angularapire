@@ -7,7 +7,8 @@ module.exports = {
     pathRewrite: {
       "^/api": "",
     },
-  },
+  }
+  ,
   "/v1/traces": {
     target: process.env["OTEL_EXPORTER_OTLP_ENDPOINT"],
     secure: process.env["NODE_ENV"] !== "development",
