@@ -14,10 +14,15 @@ import { getWebAutoInstrumentations } from '@opentelemetry/auto-instrumentations
 
 export function provideInstrumentation(): EnvironmentProviders {
   return provideAppInitializer(() => {
-    // Configure our resource
+    
+    if (window.origin == "https://localhost:7056") {
+      return;
+    }
+
+        // Configure our resource
     const resource = Resource.default().merge(
       new Resource({
-        [ATTR_SERVICE_NAME]: 'Angular App',
+        [ATTR_SERVICE_NAME]: 'My API Client',
         [ATTR_SERVICE_VERSION]: '1.0.0',
       }),
     );
