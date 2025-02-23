@@ -22,8 +22,6 @@ if (env.DOTNET_DASHBOARD_URL) {
   target = env["services__myapi-server__https__0"];
 }
 
-console.log(" Wesleyt the env", env);
-
 const PROXY_CONFIG = [
   {
     context: ["/api/*"],
